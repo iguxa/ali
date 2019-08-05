@@ -28,7 +28,7 @@ abstract class Ride{
     {
         $money = $this->wallet->getMoney();
         try {
-            if($money<self::$_cost && $money=self::$_cost){
+            if($money<self::$_cost and $money!=self::$_cost){
                 throw new Exception(self::$_exeption['insufficient'].' - '.$money);
             }
         }catch (Exception $e){
@@ -40,7 +40,7 @@ abstract class Ride{
         $money = $this->wallet->getMoney();
         $result = $money - self::$_cost;
         try{
-            if($result>0){
+            if($result>=0){
                 $this->wallet->setMoney($result);
             }else{
                 throw new Exception(self::$_exeption['insufficient'].' - '.$money);
@@ -57,7 +57,12 @@ abstract class Ride{
     }
     public function getOut()
     {
-        return $this->ride->getOut();
+        try{
+            $exit = $this->ride->getOut();
+        }catch (Exception $e){
+            die($e->getMessage());
+        }
+        return $exit;
     }
 }
 
@@ -69,7 +74,7 @@ class SingleSubway implements SubwayStrategy{
     }
     public function getOut()
     {
-        die('На данной станции турникет работает на вход');
+        throw new Exception('На данной станции турникет работает на вход');
     }
 }
 
@@ -112,5 +117,8 @@ class Wallet {
 
 class Person extends Ride {
 }
-$ride = new Person(new Wallet(31),new DoubleSubway);
-var_dump($ride->getIn()->getOut());
+$single = new Person(new Wallet(30),new SingleSubway());
+var_dump($single->getIn()/*->getOut()*/);
+
+$duble = new Person(new Wallet(30),new DoubleSubway());
+var_dump($duble->getIn()->getOut());
