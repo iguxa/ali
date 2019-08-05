@@ -1,0 +1,151 @@
+2019/08/05 19:02:32 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Error:  Call to a member function getMoney() on null in /var/www/alli/index.php on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:94
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:18
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getMoney() on null in /var/www/alli/index.php:30
+Stack trace:
+#0 /var/www/alli/index.php(18): Ride->init()
+#1 /var/www/alli/index.php(94): Ride->__construct(Object(Wallet), Object(SingleSubway))
+#2 {main}
+  thrown in /var/www/alli/index.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:03:29 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Error:  Call to a member function getMoney() on null in /var/www/alli/index.php on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:94
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:18
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getMoney() on null in /var/www/alli/index.php:30
+Stack trace:
+#0 /var/www/alli/index.php(18): Ride->init()
+#1 /var/www/alli/index.php(94): Ride->__construct(Object(Wallet), Object(SingleSubway))
+#2 {main}
+  thrown in /var/www/alli/index.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:03:54 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Error:  Call to a member function getMoney() on null in /var/www/alli/index.php on line 35
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:99
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:23
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getMoney() on null in /var/www/alli/index.php:35
+Stack trace:
+#0 /var/www/alli/index.php(23): Ride->init()
+#1 /var/www/alli/index.php(99): Ride->__construct(Object(Wallet), Object(SingleSubway))
+#2 {main}
+  thrown in /var/www/alli/index.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:03:55 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Error:  Call to a member function getMoney() on null in /var/www/alli/index.php on line 35
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:99
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:23
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getMoney() on null in /var/www/alli/index.php:35
+Stack trace:
+#0 /var/www/alli/index.php(23): Ride->init()
+#1 /var/www/alli/index.php(99): Ride->__construct(Object(Wallet), Object(SingleSubway))
+#2 {main}
+  thrown in /var/www/alli/index.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:04:53 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:101
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:25" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:04:53 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 10 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:101
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:25" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:05:04 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:101
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:25" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:05:04 [error] 8094#8094: *23 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:101
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:25" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:06:17 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 31
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:97
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:06:17 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств in /var/www/alli/index.php on line 31
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:97
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:07:17 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 31
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:97
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:07:17 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 31
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:97
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:07:52 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:98
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:07:52 [error] 8094#8094: *46 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:98
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:14:24 [error] 8094#8094: *60 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:98
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:14:24 [error] 8094#8094: *60 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 30 in /var/www/alli/index.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->__construct($wallet = class Wallet { private $money = 30 }, $ride = class SingleSubway {  }) /var/www/alli/index.php:98
+PHP message: PHP   3. Person->init() /var/www/alli/index.php:24" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:21:03 [error] 8094#8094: *75 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/alli/index.php on line 108" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:25:25 [error] 8094#8094: *89 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 1 in /var/www/alli/index.php on line 46
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getIn() /var/www/alli/index.php:120
+PHP message: PHP   3. SingleSubway->getIn($ride = class Person { private ${Ride}ride = class SingleSubway {  }; public $wallet = class Wallet { private $money = 1 } }) /var/www/alli/index.php:55
+PHP message: PHP   4. Person->getTicket() /var/www/alli/index.php:68" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:25:25 [error] 8094#8094: *89 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 1 in /var/www/alli/index.php on line 46
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getIn() /var/www/alli/index.php:120
+PHP message: PHP   3. SingleSubway->getIn($ride = class Person { private ${Ride}ride = class SingleSubway {  }; public $wallet = class Wallet { private $money = 1 } }) /var/www/alli/index.php:55
+PHP message: PHP   4. Person->getTicket() /var/www/alli/index.php:68" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:27:49 [error] 8094#8094: *103 FastCGI sent in stderr: "PHP message: PHP Exception:  На данной станции турникет работает на вход in /var/www/alli/index.php on line 72
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getOut() /var/www/alli/index.php:119
+PHP message: PHP   3. SingleSubway->getOut() /var/www/alli/index.php:60
+PHP message: PHP Fatal error:  Uncaught Exception: На данной станции турникет работает на вход in /var/www/alli/index.php:72
+Stack trace:
+#0 /var/www/alli/index.php(60): SingleSubway->getOut()
+#1 /var/www/alli/index.php(119): Ride->getOut()
+#2 {main}
+  thrown in /var/www/alli/index.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:27:49 [error] 8094#8094: *103 FastCGI sent in stderr: "PHP message: PHP Exception:  На данной станции турникет работает на вход in /var/www/alli/index.php on line 72
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getOut() /var/www/alli/index.php:119
+PHP message: PHP   3. SingleSubway->getOut() /var/www/alli/index.php:60
+PHP message: PHP Fatal error:  Uncaught Exception: На данной станции турникет работает на вход in /var/www/alli/index.php:72
+Stack trace:
+#0 /var/www/alli/index.php(60): SingleSubway->getOut()
+#1 /var/www/alli/index.php(119): Ride->getOut()
+#2 {main}
+  thrown in /var/www/alli/index.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
+2019/08/05 19:34:18 [error] 8094#8094: *109 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 1 in /var/www/alli/index.php on line 46
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getIn() /var/www/alli/index.php:117
+PHP message: PHP   3. SingleSubway->getIn($ride = class Person { private ${Ride}ride = class SingleSubway {  }; public $wallet = class Wallet { private $money = 1 } }) /var/www/alli/index.php:55
+PHP message: PHP   4. Person->getTicket() /var/www/alli/index.php:68" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru"
+2019/08/05 19:34:18 [error] 8094#8094: *109 FastCGI sent in stderr: "PHP message: PHP Exception:  Не достаточно средств - 1 in /var/www/alli/index.php on line 46
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/alli/index.php:0
+PHP message: PHP   2. Person->getIn() /var/www/alli/index.php:117
+PHP message: PHP   3. SingleSubway->getIn($ride = class Person { private ${Ride}ride = class SingleSubway {  }; public $wallet = class Wallet { private $money = 1 } }) /var/www/alli/index.php:55
+PHP message: PHP   4. Person->getTicket() /var/www/alli/index.php:68" while reading response header from upstream, client: 127.0.0.1, server: alli.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "alli.ru", referrer: "http://alli.ru/"
